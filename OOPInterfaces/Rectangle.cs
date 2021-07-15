@@ -8,7 +8,11 @@ namespace OOPInterfaces
 {
     public class Rectangle : Shape
     {
-		public Rectangle(double width, double height)
+		public Rectangle(Point topLeft,double width, double height)
+			:base(new Point[] { topLeft ?? new Point(0,0), 
+								new Point(topLeft?.X ?? 0+width, topLeft?.Y ?? 0),
+								new Point(topLeft?.X ?? 0+width, topLeft?.Y ?? 0+height),
+								new Point(topLeft?.X ?? 0, topLeft?.Y ?? 0+height)})
 		{
 			this.Width = width;
 			this.Height = height;
