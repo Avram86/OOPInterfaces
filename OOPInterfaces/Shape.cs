@@ -1,6 +1,6 @@
 ﻿namespace OOPInterfaces
 {
-    public abstract class Shape : IObjectWithARea, ITranslatableObject, IRotatableObject
+    public abstract class Shape : IShape
     {
         public Shape( Point[] points)
         {

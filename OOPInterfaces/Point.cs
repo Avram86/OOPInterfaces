@@ -14,9 +14,9 @@ namespace OOPInterfaces
 			this.Y = y;
 		}
 
-		public double X { get; private set; } = 0;
+		public double X { get;  set; } = 0;
 
-		public double Y { get; private set; } = 0;
+		public double Y { get;  set; } = 0;
 
 		public void Rotate(double angleDegrees)
 		{
@@ -35,5 +35,11 @@ namespace OOPInterfaces
 			this.X += dx;
 			this.Y += dy;
 		}
+
+		public void Print()
+		{
+			Console.WriteLine($"Point (struct) found at coords: [X={X}, Y={Y}] ");
+		}
+
 	}
 }

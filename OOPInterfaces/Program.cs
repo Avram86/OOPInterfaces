@@ -6,6 +6,15 @@ namespace OOPInterfaces
     {
         static void Main(string[] args)
         {
+
+			PointStruct ps1 = new PointStruct(10, 10);
+			PointStruct ps2 = ps1;
+
+			ps2.X = 20;
+			ps2.Y = 20;
+
+			ps1.Print();
+
 			Shape triangle = new Triangle(new Point(15, 15), new Point(23, 30), new Point(50, 25));
 			Shape rectangle = new Rectangle(new Point(10,10), 100, 200);
 
